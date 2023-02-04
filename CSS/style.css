@@ -1,0 +1,254 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    border: 2px solid;
+    margin-top: 2px;
+    border-radius: 25px;
+    background-color: black;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 13px;
+}
+
+.navbar ul li a {
+    font-size: 1.2rem;
+    padding: 1rem 1.3rem;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    color: rgb(204, 52, 52);
+}
+
+.navbar img {
+    height: 3rem;
+    width: 4rem;
+    border-radius: 20px;
+}
+
+.navbar input {
+    width: 26rem;
+    height: 2rem;
+    margin: 6px;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Utility */
+.hedding {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    /* color: white; */
+}
+
+.secondary {
+    color: black;
+}
+
+.primary {
+    font-size: 2rem;
+}
+
+/* section */
+#service-section {
+    background-color: #6ed9da;
+    border: 2px solid #6ed9da;
+}
+
+#intro-section .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 415px;
+    color: white;
+}
+
+#intro-section .intro h2 {
+    font-size: 35px;
+}
+
+#intro-section .intro p {
+    font-size: 1.2rem;
+    /* font-size: 20px; */
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+#intro-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url('/IMG/training-828726__340.jpg') no-repeat center center/cover;
+    z-index: -1;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+}
+
+.service_h2 {
+    margin-top: 1.2rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid;
+    /* height: 250px;
+    width: 70%; */
+    margin: 20px;
+    /* color: white; */
+    border-radius: 10px;
+    padding: 6px;
+    /* background-color: #cdd3d9; */
+
+}
+
+.box img {
+    height: 85px;
+    width: 80px;
+    margin-top: 20px;
+}
+
+.box p {
+    text-align: center;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.service-btn {
+    color: white;
+    background-color: rgb(228, 29, 29);
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 2px auto;
+}
+
+/* Why Fitness Gym */
+.Why {
+    background: #ff0000c7;
+    color: white;
+    border: 2px solid red;
+}
+
+.why_Cointener {
+    display: grid;
+    /* border: 2px solid; */
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+}
+
+.why_box {
+    /* border: 2px solid; */
+    width: auto;
+    height: auto;
+    margin: 1.5rem;
+}
+
+.why_h2 {
+    margin-top: 1.2rem;
+}
+
+.why_h3 {
+    color: white;
+}
+
+.why_box p {
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_box {
+    margin: auto;
+
+}
+
+.footer_box ul {
+    list-style: none;
+}
+
+.footer_box ul li {
+    padding: 0.2rem;
+    margin: 0.5rem;
+}
+
+.gym ul {
+    display: flex;
+    justify-content: center;
+}
+
+.gym img {
+    width: 3.5rem;
+}
+
+.copywrite {
+    margin-top: 1rem;
+}
+
+/* CSS for fully Responsive website  */
+@media screen and (max-width : 1089px){
+    .navbar ul li a {
+        padding: 1rem 0.5rem;
+    }
+} 
+@media screen and (max-width : 645px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .service{
+        flex-direction: column;
+    }
+    .why_Cointener{
+        grid-auto-flow: column;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width : 430px){
+    .navbar input{
+        width: 50%;
+    }
+}
+@media screen and (max-width : 300px){
+    .gym ul{
+        flex-direction: column;
+    }
+    .gym img{
+        width: 50%;
+    }
+}
